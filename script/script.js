@@ -20,7 +20,7 @@ let subject = document.getElementById("subject");
 let email = document.getElementById("email");
 let phone = document.getElementById("phone");
 let message = document.getElementById("message");
-//declaration of error message
+//declaration of error messages
 let error_name = document.getElementById("error_name");
 function formvalidation() {
   if (name.value == "") {
