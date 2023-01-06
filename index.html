@@ -126,20 +126,12 @@
         </h2>
         <div class="container portfolio">
             <div class="portCard">
-                <img src="image/photo-edit.webp" alt="">
-                <h3>Photo Designed</h3>
+                <a href="https://codepen.io/ericsibomana/pen/yLqOYqO?editors=1101"><img src="image/calculate.png" alt=""></a>
+                <h3>Calculator</h3>
             </div>
             <div class="portCard">
-                <img src="image/download.jpg" alt="">
-                <h3>Projects</h3>
-            </div>
-            <div class="portCard">
-                <img src="image/download (1).jpg" alt="">
-                <h3>Filmora</h3>
-            </div>
-            <div class="portCard">
-                <img src="image/afro-american-young-man-typing-on-laptop-670543770-5b61f8b646e0fb00504f6787.jpg" alt="">
-                <h3>System Analysed</h3>
+                <a href="https://codepen.io/ericsibomana/pen/rNredJL?editors=0110"><img src="image/list.PNG" alt=""></a>
+                <h3>My to do list</h3>
             </div>
         </div>
     </section>
@@ -289,7 +281,7 @@
     </script>
     </section>
 
-    <section class="about" id="contact">
+    <section class="about contact1" id="contact">
         <div class="gap"></div>
         <div class="container contact">
             <div class="cantactHeads">
@@ -299,12 +291,11 @@
             </div>
             <div class="FormContainer">
                 <div class="form">
-                
-                        <!-- <form action="" onsubmit="formvalidation()"> -->
+                          <!-- <form onsubmit="sendEmail(); reset(); return false;" method="post"> -->
                             <div class="form-group">
                                 <div class="input-control">
                                     <label for="">FullName</label>
-                                    <input type="text" id="fullname" name="fullname">
+                                    <input type="text" id="fullname" name="fullname" onblur="validateName()">
                                     <span class="errorMessage" id="error_name"></span>
                                 </div>
                                 <div class="input-control">
@@ -321,7 +312,7 @@
                                 </div>
                                 <div class="input-control">
                                     <label for="">Phone Number</label>
-                                    <input type="text" name="phone" id="phone">
+                                    <input type="text" name="phone" id="phone" class="phone">
                                     <span class="errorMessage" id="error_phone"></span>
                                 </div>
                             </div>
@@ -333,7 +324,7 @@
                                 </div>
                                 </div>
                                 <button type="submit" class="btn" onclick="formvalidation()">Submit</button>
-                        <!-- </form> -->
+                        </form>
                    
 
                 </div>
@@ -369,10 +360,13 @@
         <p>2022 Eric sibomana, All Reserved.</p>
         <p>Terms & Condition</p>
         <p>Privacy Policy</p>
+
     </div>
     <!-- swiper js -->
     <script src="script/swiper-bundle.min.js"></script>
     <!-- javascript -->
     <script src="script/script.js"></script>
+    <!-- email js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
